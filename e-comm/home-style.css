@@ -1,0 +1,663 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        width: 100vw;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: rgb(222, 224, 226);
+        font-family: sans-serif;
+        font-size: 17px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* --------------- HEADER CONTENT ---------------  */
+
+    header {
+        z-index: 6;
+        position: sticky;
+        top: 0;
+    }
+
+    .header_menu {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 80px;
+        background: #ffffff;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 5px 10px #423c3c;
+    }
+
+    .left-side img {
+        position: relative;
+        display: inline-block; 
+        /* width: 80px; */
+    }
+    
+    .left-side a {
+        position: relative;
+        display: inline-block;  
+        vertical-align: top;
+        margin-top: 25px;
+        margin-left: 5px;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;  */
+        /* justify-content: space-around; */
+    }
+    
+    .logo_name {
+        color: #3b2214; 
+        /* display: inline-block; */
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        list-style-type: none;
+    }
+    
+    /* LOGO IMAGE */
+    .logo_image {
+        width: 70px;
+        height: 70px;
+    }
+    
+
+    /* -------- MIDDLE HEADER ------------------ */
+    .middle-side {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        margin-right: 280px;
+        /* justify-content: space-around; */
+    }
+
+    /* hyperlinks in middle of header */
+   .middle-side li {
+        position: relative;
+        /* color: rgb(85, 19, 89); */
+        text-decoration: none;
+        list-style: none;
+        font-size: 10.5px;
+        text-transform: uppercase;
+        /* padding: 1px; */
+        letter-spacing: 2px;
+        margin: 0 8px;
+    } 
+
+    .middle-side a {
+        text-decoration: none;
+        color: rgb(73, 52, 35);
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        margin: 0 2px;
+        gap: 5px;
+    }
+
+    .right-side ion-icon {
+        background: rgb(239, 239, 239);
+        padding: 5px; 
+        border-radius: 50%; 
+        border: 2px solid #333; 
+        color: rgb(77, 52, 52);
+    }
+
+
+    /* -----------main body holding HERO IMAGE ---------- */
+
+    .hero {
+        width: 100vw;
+        height: 100vh;
+        
+        /* background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url(home2.jpg) center center / cover no-repeat; */
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+      }
+      
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 100%;
+        height: 100%;
+        text-align: center;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      /* hero image 2 photos... on MAIN  */
+      
+      section {
+        &:nth-child(1) {
+        background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url(home2.jpg) center center / cover no-repeat;
+        }
+        
+        &:nth-child(2) {
+            background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url(home1.jpg) center center / 100% no-repeat;
+            background-position-y: 45%;
+        }
+      }
+   
+    h1 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        z-index: 3;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font : normal 600 72px/1 'Open Sans', sans-serif;
+        text-align: center;
+        white-space: nowrap;
+    }
+    h1 span {
+        display: block;
+        margin-top: 1em;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    /* .hero p {
+        margin-top: 500px;
+        position: relative;
+        font-size: 10px;
+
+    } */
+
+
+    .hero_button button {
+       position: absolute;
+       z-index: 5;
+       display: inline-block;
+       font-size: 15px;
+       letter-spacing: 1.5px;
+       color: #fff;
+       width: 200px;
+       height: 70px;
+       top: 83%;
+       left:44%;
+       margin-bottom: 90px;
+       margin: 0 auto; 
+       border: 1.8px solid #a4a2a1;
+       background-color: rgb(84, 69, 66);
+       transition-duration: 0.3s;
+       transition-property: all;
+       transition-timing-function: ease;
+       cursor: pointer;
+    }  
+    
+    .hero_button button:hover {
+        border: 1px solid #ffdfdf;
+        background: white;
+        color: rgb(74, 68, 62);
+        transition:all .5s ease-in-out;
+     }
+
+    
+    /* .contents {
+        padding-bottom: 3em; */
+        /* background: linear-gradient(rgba(0,0,0,1), rgba(100,100,100,1)); */
+
+     /* }
+    .contents p { */
+        /* position: absolute; */
+        /* width: 500px;
+        margin: 0 auto;
+        padding: 3em 3em 0;
+        color: #fff;
+        font : normal 300 20px/1.8 'Open Sans', sans-serif;
+    } */
+
+    
+    /* -------------- FOOTER INFORMATION ----------------- */
+
+/* absolute may be an issue  */
+    footer {
+        margin-top: auto;
+        position:rel;
+        height: 5px;
+        width: 100vw;
+        bottom:0;
+    } 
+
+    footer .footer_container {
+        background-color: #fcfcfc;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 100px;
+    }
+
+    .footer_col ul {
+        list-style: none;
+    }
+
+    /* header names in footer  */
+    .footer_col h4 {
+        color: #3b2214;
+        margin-bottom: 10px;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .footer_col p {
+        color: #9e9692;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .footer_col ul li {
+        padding: 3px 0;
+    }
+     /* links in footer  */
+     .footer_col ul li a {
+        color: #3d3131;
+        text-decoration: none;
+        font-size: 13px;
+        opacity: 0.7;
+        transition: 0.6s;
+    }
+
+    .footer_col ul li a:hover {
+        opacity: 1;
+    }
+
+    /* newsletter info box  */
+
+    .footer_col0 {
+        /* flex-wrap: wrap; */
+        box-sizing: border-box;
+        padding: 15px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /* bottom: 0; */
+        position:relative;
+        width: 100vw;
+        background-color: #222;
+    }
+
+    .footer_col0 h4 {
+        color: #855656;
+        margin-bottom: 25px;
+        font-size: 20px;
+        position: relative;
+        display: inline-block;  
+        margin-top: 20px;
+        /* position: absolute; */
+
+    }
+
+    .footer_col0 input {
+        border: none;
+        width: 250px;
+        height: 35px;
+        /* display: block; */
+        padding-left: 20px;
+        margin: 14px 0;
+    }
+
+    /* button for newsletter */
+    .footer_col0 .inputSubmit {
+        padding: 0px 20px;
+        background-color: rgb(105, 86, 82);
+        border: none;
+        color: #fff;
+    }
+
+
+    /* SUBMIT BUTTON HOVER */
+    .footer_col0 .inputSubmit:hover {
+        background-color: rgb(192, 172, 154);
+        color: #fff;
+    }
+
+
+     /* liscense  */ 
+
+     
+    .liscense p {
+        font-size: 12px;
+        color: #361e11; 
+    }
+
+    .row hr {
+        opacity: 0.5s;
+    }
+        /* icons  */
+
+    .row .socialIcons ion-icon {
+       display: inline-block;
+       color: #3b2214; 
+       font-size: 20px;
+       margin: 0 15px;
+       transform: 0.5s;
+    }
+
+    .row .socialIcons ion-icon:hover {
+       color: sienna; 
+    }
+
+
+    /* and (max-width: 380px) (min-width: 1160px) */
+
+    /* ------------------ MEDIA QUERY ----------------------*/
+
+    /* PHONE USAGE */
+    @media only screen and (max-width: 380px) and (min-width: 380px){
+        
+        body {
+            width: 60%;
+            height: 50%;
+
+        }
+        .header_menu {
+            position: fixed;
+            background: rgb(211, 209, 209);
+            width:62%;
+            height:30vh;
+        }
+
+        section {
+        height: 70vh;
+        }
+
+        header {
+            width: 55vw;
+            flex-direction: column;
+        }
+
+        .left-side img {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            left: 8vh;
+            top: -35px;
+        }
+
+        .logo_name {
+            display: flex;
+            top:-55px;
+            left:0;
+            font-size: 16px;
+        }
+
+        .middle-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 7vh;
+            margin-left: -155px;
+        }
+
+        .middle-side li {
+            font-size: 10.5px;
+            font-weight: bold;
+        }
+
+        .right-side {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            /* background-color: rgb(96, 113, 96); */
+            margin-left:-424px;
+            margin-top:23vh;
+        }
+
+        .right-side ion-icon {   
+            width:20px;
+            height:20px;
+        }
+
+        .hero_button button {
+            top: 52%;
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            left: 14%;
+            width: 30%;
+            height: 5%;
+        }
+
+        h1, h1 span {
+            top:45%;
+            inline-size: 150px;
+            overflow: hidden;
+            text-wrap: wrap;
+            font-size: 18px;
+            left: 30%;
+        }
+
+
+        .footer_col0 {
+            width: 61%;
+            margin-top: -55%;
+        }
+    
+        .footer_col0 h4 {
+            font-size: 15px;
+            margin-top: -55%;
+            margin-left: -700px;
+            background-color: yellow;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        .footer_container {
+            width: 60vw;
+        }
+
+        .footer_col h4 {
+            display: flex;
+            flex-direction: column;
+            margin-left: -50px;
+            font-size: 13px;
+        }
+
+        .footer_col p{
+            margin-left: -50px;
+            font-size: 10px;
+            text-wrap:balance;
+        }
+
+        .footer_col0 input {
+            flex-direction: column;
+            margin-left: 630px;
+            width: 160px;
+            height: 30px;
+        }
+
+        .footer_col0 .inputSubmit button{
+            flex-direction: column;
+            width: 20vw;
+            font-size: 10px; 
+            font-weight: bold;
+            margin-top: 50px;
+            margin-left: -250px;
+        
+        }
+
+        .liscense {
+            font-size: 15px;
+            margin-left: -50px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        .footer_col ul li a {
+            font-size: 10px;
+            margin-left: -50px;
+            text-wrap: nowrap;
+        }
+
+}
+    
+    /* TABLET USAGE  */
+
+    @media only screen and (min-width: 800px) and (max-width: 817px) {
+
+       .header_menu {
+        background: transparent;
+       }
+
+       section {
+        height: 100vh;
+       }
+
+    .left-side img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        top: 25px;
+    }
+
+    .logo_name {
+        display: flex;
+        top:-35px;
+        left:50px;
+        font-size: 16px;
+    }
+
+    .middle-side {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1vh;
+        margin-left: -100px;
+    }
+
+    .middle-side li {
+        font-size: 12.5px;
+        font-weight: bold;
+    }
+
+    .right-side {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /* background-color: rgb(96, 113, 96); */
+        margin-left:-424px;
+    }
+
+    .right-side ion-icon {   
+        width:20px;
+        height:20px;
+    }
+
+    .hero_button button {
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        left: 35%;
+        width: 30%;
+        height: 5%;
+    }
+
+    h1 span {
+        text-wrap:balance;
+        font-size: 30px;
+        left: 90px;
+    }
+
+    .footer_col0 .inputSubmit { 
+        flex-direction: column;
+        width: 10vw;
+        margin-top: 60px;
+        padding: 9px;
+        font-size: 15px;
+        font-weight: bold; 
+        margin-top: 10px;
+        }
+    }
+
+    /* @media only screen and (min-width: 501px) and (max-width: 800px) {
+        .header_menu {
+         background: yellow;
+        }
+     } */
+
+    /* @media only screen and (max-width: 800px) */
+
+    /* DESKTOP USAGE  */
+
+    /* min-width 1159 */
+
+    @media only screen and (min-width: 801px) and (max-width: 1159px) {
+
+        header {
+            display: inline-block;
+        }
+
+        .left-side img {
+            height: 60px;
+            width: 60px;
+        }
+
+        .logo_name {
+            font-size: 20px;
+        }
+
+        .middle-side {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 7vh;
+            margin-left: -255px;
+        }
+
+        .middle-side li {
+            font-size: 15.5px;
+            font-weight: bold;
+            margin-top: -30px;
+        }
+
+        .right-side {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            margin-left:-424px;
+            margin-top:3vh;
+        }
+
+        .right-side ion-icon {   
+            width:20px;
+            height:20px;
+        }
+
+    }

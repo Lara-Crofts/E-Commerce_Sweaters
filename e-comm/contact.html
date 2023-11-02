@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="contactstyle.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/> -->
+        <title>E-commerce Website</title>
+    </head>
+
+
+<body>
+    <header>
+        <!-- main div to contain header -->
+<div class="header_menu">
+
+    <div class="left-side">
+        <ul class="navbar_left"></ul>
+            <img class="logo_image" src = "wov-logo.png" alt = "">
+            <a href="home-index.html" class="logo_name"> wovenstrings</a>
+</div>
+
+<div class="middle-side">
+        <!-- MIDDLE -->
+    <ul class="navbar_middle"></ul>
+            <li class="item"><a href="home-index.html">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="product.html">Products</a></li>
+            <li class="item"><a href="#">Blog</a></li>
+            <li class="item"><a href="contact.html">Contact</a>
+        </li>
+</div>
+
+
+<div class="right-side">
+    <ul class="navbar_right"></ul>
+            <!-- <span class="shop_icons"> -->
+            <!-- <li class="item_icon"><a href="#">Log In</a></li>
+            <li class="item_secondicon"><a href="#">Sign Up</a></li> -->
+            <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="cart-sharp"></ion-icon></a>
+            <a href="#"><ion-icon name="lock-closed-sharp"></ion-icon></a>
+     </div>
+   </div>
+ </header>
+
+ <!-- hero image -->
+
+ <!-- <main>
+    <section>
+</div>
+
+</section>
+</main> -->
+
+<div class="contact_main">
+
+    <div class="contact_container">
+
+        <hr class="line">
+
+      <div class="form-frame">
+      
+        <h2 class="contact-us">Contact Us <br>
+            <p>Answers to most questions can be found in our FAQs page. 
+            If you have additional questions feel free to contact us using the form below </p>
+        </h2>
+
+
+        <!-- <span class="attr">name</span>
+        <input class="focus-control" type="text" />
+
+        <span class="attr">email</span>
+        <input class="focus-control" type="text" />
+
+        <span class="attr">message</span>
+        <textarea class="focus-control03"></textarea>
+
+        <div class="submit-set">
+          <input class="submit-button" type="button" value="Send" />
+        </div> -->
+
+        <form name="myForm" onsubmit="return validator()">
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="">
+
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="">
+
+
+            <label for="userEmail">Email</label>
+            <input type="email" input id="userEmail" placeholder="">
+
+            <label for="comments">Message</label>
+            <textarea id="comments" name="message" placeholder="Write your message here"></textarea>
+
+
+            <!-- button to submit  -->
+            <input type="submit" value="submit" class="submit-button">
+        </form>
+
+           <!-- -----   buttons  --------     -->
+    
+      <div class="social">
+
+        <hr class="line">
+        <a href="#"></a><div class="facebook_button">Our FAQ
+          </div>
+        </div>
+</div>
+</div>
+</div>
+</body>
+
+<footer>
+    <!-- newsletter  -->
+
+    <div class="footer_col0">
+        <h4>Newsletter</h4>
+         <form action="">
+            <input type="text" placeholder="Your Name" class="inputName">
+            <input type="email" placeholder="Enter Email" class="inputEmail">
+            <input type="submit" placeholder="Submit" class="inputSubmit">
+         </form>
+     </div>
+
+<div class="footer_container">
+    <div class="row">
+
+        <!-- 1st columns  -->
+
+        <div class="footer_col">
+            <h4>About Our Company</h4>
+            <p>Wovenstrings is a woman-owned business committed to creating eco-friendly sweaters<br> 
+             while promoting positive social change. This staple sweater features in a chunky knit <br>
+             fabrication with timeless cable detailing throughout for an added special touch.
+ 
+            </p>
+         </div>
+
+
+        <!-- 2nd column  -->
+        <div class="footer_col">
+            <h4>Need Assistance?</h4>
+            <ul class="list_footer">
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Size Guide</a></li>
+                <li><a href="#">Policies & FAQ</a></li>
+
+            </ul>
+         </div>
+
+         <!-- 3rd  column -->
+
+         <div class="footer_col">
+            <h4>Your Order</h4>
+            <ul class="list_footer">
+                <li><a href="">Track Your Order</a></li>
+                <li><a href="">Shipping + Delivery</a></li>
+                <li><a href="">Returns + Exchanges</a></li>
+                <li><a href="">Start A Return</a></li>
+                <li><a href=""></a></li>
+
+            </ul>
+         </div>
+
+         <!-- 4th column  -->
+
+         <div class="footer_col">
+            <h4>About</h4>
+            <ul class="list_footer">
+                <li><a href="">Our Impact</a></li>
+                <li><a href="">Affiliates</a></li>
+                <li><a href="">Social Blog</a></li>
+                <li><a href=""></a></li>
+
+            </ul>
+         </div>
+
+         <!-- fourth column -->
+
+         <!-- <div class="footer_col">
+            <h4>Newsletter</h4>
+             <form action="">
+                <input type="text" placeholder="Your Name" class="inputName">
+                <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                <input type="submit" placeholder="Submit" class="inputSubmit">
+             </form>
+         </div> -->
+    </div>
+         <hr>
+         <div class="row">
+            <div class="liscense">
+                <p>&#169; 2023 Design. All Rights Reserved.</p>
+            </div>
+
+            <div class="socialIcons">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+
+         </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<!-- <script src="script.js" type="text/javascript"></script> -->
+
+</html>
+
+
