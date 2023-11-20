@@ -15,11 +15,19 @@
           return false;
         }
       
+        // (/) to define the start and end of the pattern.
+        // ^ at the beginning of the pattern means that the match must start at the beginning of the string
+        // [a-zA-Z] is a character set that specifies the range of characters allowed. 
+        // .. it represents both uppercase and lowercase letters.
+        // * means that there can be zero or more occurrences of the character set.
+        // $ at the end of the pattern means that the match must end at the end of the string.
+        // 
         if (!/^[a-zA-Z]*$/.test(firstName)) {
           alert("First name must contain only alphabetic characters. Please enter a valid first name.");
           document.myForm.firstName.focus();
           return false;
         }
+        
       // last name validation 
         if (lastName === "") {
           alert("Last name is required. Please enter a valid last name.");
